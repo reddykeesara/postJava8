@@ -3,6 +3,7 @@ package array;
 public class ArrayMain {
 
 	public ArrayMain() {
+		//TODO
 	}
 
 	public static void main(String[] args) {
