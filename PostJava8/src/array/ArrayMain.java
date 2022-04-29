@@ -3,10 +3,10 @@ package array;
 public class ArrayMain {
 
 	public ArrayMain() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
+		//TODO test github
 		//int[] array = {10,20,30};
 		//int[] array = new int[10]; size of this array is fixed;
 		String[] strArray = {"zzz"};
