@@ -3,12 +3,10 @@ package array;
 public class ArrayMain {
 
 	public ArrayMain() {
-		//TODO
+		//local commit
 	}
 
 	public static void main(String[] args) {
-		
-		
 		
 		//int[] array = {10,20,30};
 		//int[] array = new int[10]; size of this array is fixed;
