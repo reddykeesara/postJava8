@@ -1,5 +1,5 @@
 package basics;
-
+// commint from github server
 abstract class Human{
 	public abstract void eat() ;
 
