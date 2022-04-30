@@ -3,8 +3,9 @@ package array;
 public class ArrayMain {
 
 	public ArrayMain() {
-		//local commit
-		//additional changes from local
+
+		//server commit
+		//loal commit
 	}
 
 	public static void main(String[] args) {
