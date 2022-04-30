@@ -3,7 +3,7 @@ package array;
 public class ArrayMain {
 
 	public ArrayMain() {
-		//local commit
+		//server commit
 	}
 
 	public static void main(String[] args) {
