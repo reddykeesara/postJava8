@@ -1,8 +1,5 @@
-package postJava8;
+package interviewQ;
 
-import postJava8.Interface1;
-import postJava8.Interface2;
-import postJava8.SClass1;
 
 interface Interface1 {
 	void intf1Method1();
@@ -17,7 +14,7 @@ interface Interface1 {
 }
 
 interface Interface2 {
-	void int2fMethod1();
+	void intf2Method1();
 
 	default void defMethodIntf() {
 		System.out.println(" default method in interface2");
@@ -54,11 +51,12 @@ class SClass2 {
 
 }
 
-public class TestPost8 extends SClass1 implements Interface1, Interface2 {
+public class IntfMethodCallingSuper extends SClass1 implements Interface1, Interface2 {
 
-	public TestPost8() {
-		// Interface1.super.defMethodIntf();
-		// Interface2.super.defMethodIntf();
+	public IntfMethodCallingSuper() {
+		defMethodIntf();
+		Interface1.super.defMethodIntf();
+		Interface2.super.defMethodIntf();
 
 	}
 
@@ -73,7 +71,7 @@ public class TestPost8 extends SClass1 implements Interface1, Interface2 {
 	}
 
 	@Override
-	public void int2fMethod1() { // TODO Auto-generated method stub
+	public void intf2Method1() { // TODO Auto-generated method stub
 
 	}
 
@@ -86,16 +84,16 @@ public class TestPost8 extends SClass1 implements Interface1, Interface2 {
 	public void meth() {
 		// TODO Auto-generated method stub
 		// TestPre8 testPre8 = new TestPre8();
-		Interface1 intf = new TestPost8();
+		Interface1 intf = new IntfMethodCallingSuper();
 		intf.intf1Method1();
 	}
 
 	public static void main(String[] args) {
-		Interface1 intf1 = new TestPost8();
-		Interface2 intf2 = new TestPost8();
-		TestPost8 tp = new TestPost8();
-		intf1.defMethodIntf();
-		intf2.defMethodIntf();
+		//Interface1 intf1 = new TestPost8();
+		//Interface2 intf2 = new TestPost8();
+		IntfMethodCallingSuper tp = new IntfMethodCallingSuper();
+		//intf1.defMethodIntf();
+		//intf2.defMethodIntf();
 		// tp.int2fMethod1();
 		// tp.intf1Method1();
 

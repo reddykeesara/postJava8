@@ -5,7 +5,7 @@ package basics;
 //single abstract method - functional interface - lambda expression
 //marker interface - no method
 
-//Abstract class -> define and declare
+//Abstract class -> declare and define;
 //Interface ->      declare also declare now after java8
 
 interface Abc {
@@ -30,3 +30,14 @@ public class Interface {
 		obj.show();
 	}
 }
+/*
+public class JavaTester{
+	   public static void main(String args[]){
+	      int a; // declaration of variable
+	      a=10; // definition of variable
+	      functionA(a); // declaration of function
+	   }
+	   public static void functionA(int a){
+	      System.out.println("value of a is " + a); // definition of function
+	   }
+	}*/

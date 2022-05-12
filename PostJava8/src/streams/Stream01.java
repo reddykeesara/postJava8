@@ -18,13 +18,6 @@ public class Stream01 {
 		
 		List<String> list = Arrays.asList("a","b","c","d");
 		list.stream().filter(name -> name.startsWith("a")).map(String::toUpperCase).sorted().forEach(System.out::println);
-	
-		String exampleString = "This is a sample string";
-		long totalChars = exampleString.chars().filter(ch -> ch == 's').count();
-		System.out.println(totalChars);
-		
-		
-		
 	}
 
 }

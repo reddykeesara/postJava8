@@ -11,7 +11,7 @@ public class StreamMap_FlatMap {
 		
 		// Using Stream map(Function mapper) to convert the Strings in stream to UpperCase form
 		System.out.println("The stream after applying the function is : ");
-		List<String> list = Arrays.asList("geeks", "gfg", "g", "e", "e", "k", "s");
+		List<String> list = Arrays.asList("geeks", "gfg", "g", "e", "e", "k", "s");		
 		List<String> answer = list.stream().map(String::toUpperCase).collect(Collectors.toList());
 		System.out.println(answer);
 

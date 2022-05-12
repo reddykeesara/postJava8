@@ -2,13 +2,15 @@ package array;
 
 
 class Calc {
-	public int add(int... n) {
+	// varargs used instead of add(int i), add(int i, int j)..
+	public int add(int... n) { 
 
 		int sum = 0;
 		for (int i : n) {
 			sum = sum + i;
 
 		}
+		System.out.println(sum);
 		return sum;
 	}
 }
@@ -19,9 +21,15 @@ public class Varargs {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main(String[] args) {
+	public final static void  main(String[] args) {
 		Calc calc = new Calc();
 		System.out.println(calc.add(1, 2, 3, 4, 5, 6, 7, 8, 9));
+		calc.add(1,2);
+		calc.add(1,2,3);
+		calc.add(1,2,3,4);
+		calc.add(1,2,3,4,5);
+		calc.add(1,2,3,4,5,6);
+		calc.add(1,2,3,4,5,6,7);
 	}
 }
  class MainMethodTest {
