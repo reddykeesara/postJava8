@@ -7,7 +7,7 @@ abstract class Sample{
 	public void abcd() {
 		System.out.println("inside abcd ");
 	}
-	public Sample(){
+	protected Sample(){
 		System.out.println("in sample");
 	}
 }
