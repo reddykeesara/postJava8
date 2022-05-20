@@ -50,7 +50,7 @@ public class WildCardDemo {
 
 // Java program to demonstrate Lower Bounded Wildcards
 
-class WildcardDemo2 {
+class LowerBoundedWildcardDemo2 {
     public static void main(String[] args)
     {
         // Lower Bounded Integer List
@@ -103,7 +103,7 @@ class WildcardDemo2 {
  
 
  
-class unboundedwildcardemo {
+class Unboundedwildcardemo {
     public static void main(String[] args)
     {
  
@@ -116,6 +116,10 @@ class unboundedwildcardemo {
         printlist(list1);
  
         printlist(list2);
+        
+        //added later
+        List<String> list3 = Arrays.asList("a","b","3","4");
+        printlist(list3);
     }
  
     private static void printlist(List<?> list)

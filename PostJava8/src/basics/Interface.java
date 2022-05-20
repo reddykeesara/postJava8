@@ -2,7 +2,7 @@ package basics;
 
 //types of interface
 //normal interface
-//single abstract method - functional interface - lambda expression
+//functional interface - single abstract method 
 //marker interface - no method
 
 //Abstract class -> declare and define;
@@ -10,6 +10,14 @@ package basics;
 
 interface Abc {
 	void show();
+	/*	if an interface declares default boolean equals() method It throws an error.. we have to define
+	default boolean equals();
+	 *  default boolean equals(){
+			 return true;
+		 }
+		 default void hashcode() {
+			 
+		 }*/
 
 }
 

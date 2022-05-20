@@ -18,7 +18,10 @@ public class StringReplace {
 //	}
 
 	public static void main(String args[]) {
-		String s1 = "javatpoint is a very good website";
+		String s1 = "javatpoint is a very good website ";
+		System.out.println(s1.repeat(3));
+		System.out.println(s1.hashCode());
+		System.out.println(s1.trim());
 		String replaceString = s1.replace('a', 'e');// replaces all occurrences of 'a' to 'e'
 		System.out.println(replaceString);
 

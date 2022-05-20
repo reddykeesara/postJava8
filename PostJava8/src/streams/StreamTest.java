@@ -21,6 +21,13 @@ public class StreamTest {
 		.findFirst()
 		.ifPresent(System.out::println);
 		
+		Stream.of(4,5,2,1,3,4,3)
+		.sorted()
+		.distinct()
+		.forEach(System.out::print);
+		
+		System.out.println();
+		
 		System.out.println(IntStream.range(1, 5).sum());
 		
 		IntStream.range(1, 10).forEach(System.out::print);
