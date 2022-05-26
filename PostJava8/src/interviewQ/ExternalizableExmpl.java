@@ -1,7 +1,21 @@
 package interviewQ;
 
-//Java program to demonstrate working of Externalization
-//interface
+//Java program to demonstrate working of Externalization interface
+/*
+Externalization serves the purpose of custom Serialization, where we can decide what to store in stream.
+Externalizable interface present in java.io, is used for Externalization which 
+extends Serializable interface. 
+It consist of two methods which we have to override to 
+write/read object into/from stream which are- 
+ 
+
+// to read object from stream
+void readExternal(ObjectInput in) 
+
+// to write object into stream
+void writeExternal(ObjectOutput out) 
+
+*/
 import java.io.*;
 
 class Car implements Externalizable {
